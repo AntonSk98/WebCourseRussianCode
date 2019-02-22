@@ -1,0 +1,814 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.icons
+		.icon1, .icon2, .icon3
+			ul
+				li
+					&+li
+						margin-left: 0.98%
+	.believing
+		.container
+			.row
+				.cover
+					.icon1
+						ul
+							li+li
+								margin-left: 1.1%
+					.icon2, .icon3
+            			ul
+                			li+li
+                        		margin-left: 4.38%
+	.second-screen
+		.container
+			.row
+				.tr
+					top: 95.5%
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.guaranties
+		.container-fluid
+			ul
+				li
+					img
+						margin-top: -4.5rem
+		.container
+			.row
+				.feature
+					p
+						font-size: 1.6rem
+					ul
+						li
+							section
+								margin-top: -3rem
+	.first-screen
+		.application
+			.people, .phone, .arrow
+				margin-top: 5.5rem
+			.appl
+				.str1
+					font-size: 1.7rem
+				.str2
+					margin-top: 1rem
+					font-size: 2rem
+				#end
+					font-size: 1.1rem
+	.Olga
+		.container
+			.row
+				.col-md-9
+					ul
+						li
+							section
+								margin-top: -3rem
+	html
+		font-size: 7.5px
+	.assortment
+		.container-fluid
+			ul
+				li
+					img
+						margin-top: -4.5rem
+	.icons
+		.container
+			.row
+				.col-md-12
+					ul
+						li
+							#small
+								margin-top: -4.5rem
+	.right_initial
+		.container
+			.row
+				.image2
+					padding-left: 2rem
+			.col-md-12
+				.row
+					.col-md-3
+						img
+							margin-left: 0rem
+							transform: translateY(-40%)
+					
+	.right_initial, .believing
+		.container
+			.row
+				.col-md-12
+					ul
+						li
+							img
+								margin-top: -4.5rem
+	.second-screen
+		.container
+			.row
+				.image2
+					padding-left: 2rem
+		.addition2
+			.col-md-3
+				transform: translateY(80%)
+				img
+					margin-left: 0%
+	.suggestion
+		.container-fluid
+			.str1,
+				p
+					letter-spacing: 0rem
+			.str2
+				span
+					letter-spacing: 0rem
+	.assortment
+		.conditioner
+			.col-md-12
+				.sphere
+					top: 18%
+					left: 50%
+					transform: translate(-50%, -50%)
+				.col-md-2,section
+					ul
+						li
+							section
+								margin-top: -3rem
+					.img
+						img
+							margin-left: -40%
+	.conditionerAdd
+		.container
+			.row
+				.col-md-12
+					.col-sm-2
+						
+						left: 40%
+						&+.col-sm-2
+                    		margin-left: 8%
+	.conditioner3
+		.container
+			.str1
+				ul
+					li
+						section
+							margin: 2.5rem
+							margin-left: 1rem
+							margin-right: 1rem
+			.row
+				.sphere
+					top: 14%
+				.str1
+					.img
+						width: 15rem
+						height: 15rem
+						img
+							margin-left: 2%
+							width: 100%
+							height: 100%
+	.second-screen
+		.container
+			.row
+				.tr
+					top: 93.5%
+							
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	html
+		font-size: 7px
+	.first-screen, .end-screen
+		background-size: 110%
+		max-height: 64rem
+		height: 64rem
+		.header
+			.logo
+				width: 12.8rem
+				height: 8rem
+				img
+					margin-top: 1.0rem
+					width: 4.7rem
+					height: 2.5rem
+					margin-left: 4rem
+				p
+					font-size: 1.6rem
+			.descript
+				margin-left: 0rem
+				margin-top: 2rem   
+				p
+					font-family: "OpenSansItalic"
+					font-size: 1.4rem
+					line-height: 1
+					&+p
+						margin-top: 1rem
+			.contact
+				.time
+					p
+						font-size: 1.7rem
+				.number
+					p
+						font-size: 2.2rem
+						font-weight: bold
+				#a
+					font-size: 1.2rem
+		.slogan
+			left: 0%
+			transform: translate(0%)
+			.str1, .str2, .str3
+				p
+					font-size: 3rem
+		.benefits
+			left: 0%
+			transform: translate(0%)
+			ul
+				li
+					&::before
+						position: absolute
+						content: url(../img/galka.png)
+						margin-top: -0.5rem
+						margin-left: 2rem
+					&+li
+						margin-top: 4%
+					p
+						font-size: 1.3rem
+			
+		.application
+			left: 100%
+			margin-top: 26rem
+			transform: translate(-102%)
+			font-size: 2rem
+			.appl
+				height: auto
+				.str1
+					font-size: 1.5rem
+				.str2
+					margin-top: 1rem
+					font-size: 1.8rem
+				input
+					width: 25rem	
+					font-size: 1.7rem
+					&+input
+						margin-top: 1rem
+				#in1
+					margin-top: 1.5rem
+				.give
+					margin-top: 1rem
+					width:  25rem
+					margin-left: 1rem
+					a
+						padding: 0rem
+						p
+							font-size: 1.5rem
+				#end
+					font-size: 1rem
+					margin-top: 1rem
+					margin-bottom: 2rem
+				.people, .phone, .arrow
+					display: none
+	.right_initial, .second-screen
+		margin-left: 1.5rem
+		margin-right: 1.5rem
+		#header
+        	font-size: 2rem
+		.comfort, .comfort2
+			.text1, .text2
+			h1
+				margin-top: 3rem
+				font-size: 1.8rem
+			ul
+				margin-top: -2rem
+				li
+					hr
+						width: 30px
+					section
+						margin-top: -3.2rem
+			p
+				padding-left: 1.5rem
+				padding-right: 1.5rem 
+				margin-top: -1rem
+				font-size: 1.2rem
+		.addition
+			p
+				font-size: 1.5rem
+		.addition2
+			.col-md-3
+				margin-top: 8rem
+				transform: translateY(0%)
+				img
+					width: 92%
+					height: 100%
+					margin-left: 0%
+			.col-md-9
+				h1
+					padding-left: 1.5rem
+					font-size: 2rem
+				p
+					padding-left: 1.5rem
+					font-size: 1.3rem
+	.suggestion
+		.container-fluid
+			.str1,
+				p
+					font-size: 1.6rem
+					letter-spacing: 0rem
+			.str2
+				span
+					font-size: 1.35rem
+					letter-spacing: 0rem
+	.icons
+		p
+			font-size: 1.9rem
+			margin-bottom: 3rem
+		.icon1, .icon2, .icon3
+			ul
+				margin-top: -3rem
+				li
+					&+li
+						margin-left: 2%
+	.assortment
+		.conditioner
+			.container
+				.row
+					a
+						font-size: 1.14rem
+			.col-md-12
+				.sphere
+					top: 14.5%
+					left: 50%
+					transform: translate(-50%, -50%)
+				ul
+					li
+						margin: 0rem
+				#lastUL
+					margin-top: -10rem
+				.col-md-2,section
+					.img
+						margin: 0 auto
+						img
+							padding: 0rem
+							margin: 0rem
+		.conditionerAdd
+			.container
+				.row
+					.col-md-12
+						.sphere
+							top: 12.5%
+						p
+							font-size: 1.8rem
+						.col-sm-2
+							left: 0%
+							transform: translate(0%)
+							margin: 0 auto
+							padding: 0rem
+		.conditioner3
+			.container
+				.row
+					.col-md-12
+						padding-bottom: 1rem
+						.sphere
+							top: 0%
+							margin-top: 11.5rem
+						p
+							font-size: 1.8rem
+							padding-top: 2rem
+						
+	.second-screen
+		.container
+			.row
+				.textborder
+	.first-screen-addition
+		background-size: 140%
+		.benefits
+			.container
+				.row
+					.col-md-7
+						margin-top: 0rem
+						
+		.application
+			.container
+				.row
+					.appl
+						margin-top: -6rem
+	.second-addition-addition2
+		background-size: 240%
+	.Olga
+		.container
+			.row
+				.col-xs-12
+					padding-right: 0rem
+					width: 100%	
+				.woman
+					padding: 0rem
+					left: 50%
+					transform: translate(-50%)
+					box-shadow: 10px 2px 10px 1px rgba(0, 0, 0, 0.2)
+				.mainPart
+					margin-top: 2rem
+	.guaranties
+		.container-fluid
+			ul
+				li
+					img
+						margin-top: -5rem
+		.container
+			.row
+				.feature
+					p
+						font-size: 1.6rem
+					ul
+						li
+							section
+								margin-top: -3rem
+	.believing
+		.container
+			.row
+				.cover
+					.icon1
+						ul
+							li+li
+								margin-left: 9%
+								&:nth-child(5)
+									margin-top: 12%
+	.CPO
+		.container
+			.row
+				.col-xs-4
+	.end-screen
+		height: auto			
+	.second-screen
+		.container
+			.row
+				.tr
+					top: 93.5%
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	html
+		font-size: 6px
+	.modalDialog > div
+		input
+			font-size: 2rem
+	.first-screen, .end-screen
+		background-position: center 0rem
+		background-size: 200%
+		.header
+			.container
+				.row
+					.col-md-3
+						padding: 0rem
+						margin-left: 4rem
+						width: 100%
+					.col-md-4
+						width: 50%
+					.col-md-offset-1
+						width: 50%
+						margin: 0 auto
+						.number
+							margin-bottom: -1rem 
+		.slogan
+			left: 0%
+			transform: translate(0%)
+			margin-top: 25rem
+			padding: 0rem
+			.container
+				.row
+					.col-md-8
+						width: 100%
+						.str1, .str2, .str3
+							p
+								display: block
+								font-size: 2rem
+		.benefits
+			left: 0%
+			transform: translate(0%)
+			.container
+				.row
+					.col-md-6
+						width: 100%
+						ul
+							li
+								display: block
+					
+		.application
+			display: none
+		.mini
+			position: absolute
+			top: 100%
+			display: inline
+			transform: translateY(-100%)
+			margin-top: -4rem
+			width:  100%
+			height: 3rem
+			background-color: rgb(242, 108, 79)
+			box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1)
+			border-radius: 0.2rem
+			a
+				text-decoration: none
+				color: white
+				p
+					text-align: center
+					padding: 0.5rem
+					font-family: "Open Sans"
+					font-size: 1.5rem
+	.CPO
+		.container
+			.row
+				.col-md-2
+					width: 100%
+	.right_initial, .second-screen
+		.container
+			.row
+				.image2
+					padding-left: 15px
+		margin-left: 1.5rem
+		margin-right: 1.5rem
+		#header
+			font-size: 2rem
+		ul
+			display: none
+		.comfort, .comfort2
+			.text1, .text2
+			h1
+				margin-top: 3rem
+				font-size: 1.8rem
+			ul
+				display: none
+			p
+	
+				margin-top: 1rem
+				font-size: 1.2rem
+			.col-md-9
+				h1
+					padding-left: 1.5rem
+					font-size: 2rem
+				p
+					padding-left: 1.5rem
+					font-size: 1.3rem
+	.suggestion
+		.container-fluid
+			.str1
+				p
+					font-size: 1.9rem
+					margin-bottom: 2rem
+			.str2
+				span
+					font-size: 1.9rem
+					
+				
+		.toText
+			.container
+				.col-md-12
+					.col-md-6
+						width: 100%
+	.assortment
+		.container-fluid
+			ul
+				li
+					margin-top: 5rem
+					img
+						margin-top: -5.5rem
+		.conditioner
+			.container
+				.row
+					a
+						display: block
+						font-size: 1.14rem
+			.col-md-12
+				.sphere
+					top: 8%
+					left: 50%
+					transform: translate(-50%, -50%)
+					
+				ul
+					li
+						margin: 0.5rem
+						margin-top: 2rem
+						
+				#lastUL
+					margin-top: -10rem
+				.col-md-2,section
+					width: 100%
+					.img
+						margin-top: 5rem
+		.conditionerAdd
+			.container
+				.row
+					.col-md-12
+						#name
+							font-size: 2rem
+						.sphere
+							top: 6%
+							left: 50%
+							transform: translate(-50%, -50%)
+							
+						p
+							font-size: 1.8rem
+						.col-sm-2
+							left: 0%
+							transform: translate(0%)
+							margin: 0 auto
+							padding: 0rem
+		.conditioner3
+			.container
+				.row
+					.col-md-12
+						padding-bottom: 1rem
+						.sphere
+							top: 0%
+							margin-top: 11.5rem
+						.str1
+							#sect1
+								margin-left: 1rem
+							#sect2
+								margin-left: 1rem
+							width: 100%
+							padding: 0rem
+							margin: 0rem
+							ul
+								li
+									margin: 0rem
+									section
+										margin: 3.2rem
+	.first-screen-addition
+		height: 50rem
+		.slogan
+			left: 0%
+			transform: translate(0%)
+			margin-top: 5rem
+			padding: 0rem
+			.container
+				.row
+					.col-md-7
+						width: 100%
+						p
+							display: block
+							font-size: 2rem
+		.benefits
+			left: 0%
+			transform: translate(0%)
+			.container
+				.row
+					.col-md-7
+						width: 100%
+						margin-top: -2rem
+						ul
+							li
+								display: block
+	.second-addition-addition2
+		background-position: center 0rem
+		background-size: 230%
+	.Olga
+		.container
+			.row
+				.woman
+					width: 100%
+				.mainPart
+					ul
+						li
+							section
+								margin-top: -3.7rem
+	.guaranties
+		.container
+			.row
+				.feature
+					ul
+						li
+							margin-top: -2rem
+							section
+								margin-top: -3.5rem
+	.believing
+		padding-bottom: 4rem
+		.container
+			.row
+				.cover
+					ul
+						li
+							img
+								margin-top: -5rem
+					.icon1
+						#diplom
+							margin: 0rem
+							width: 100%
+							li
+								left: 50%
+								margin: 0rem
+								&+li
+									margin-top: 8rem
+									margin-left: 2rem
+								&:nth-child(1)
+									margin-left: 1rem
+					.icon2, .icon3
+						margin-left: 1.5rem
+						margin-right: 1.5rem
+	.map
+		.position
+			.addres
+				p
+					font-size: 1.8rem
+					line-height: 2.2
+	.end-screen
+		.header
+			.container
+				.row
+					.col-sm-offset-1
+						a
+							font-size: 1.5rem
+							margin-top: 4rem
+	.icons
+		.container
+			.row
+				.col-md-12
+					ul
+						li
+							#small
+								margin-top: -5.5rem
+	.second-screen
+		.container
+			.row
+				.col-md-12
+					.tr
+						top: 93%
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 456px)
+	.assortment
+		.conditionerAdd
+			.container
+				.row
+					.col-md-12
+						#name
+							font-size: 2rem
+						.sphere
+							top: 7%
+							left: 50%
+							transform: translate(-50%, -50%)
+	
+@media only screen and (max-width : 586px)
+	.second-screen
+		.container
+			.row
+				.tr
+					top: 94%
+@media only screen and (max-width : 436px)
+	.second-screen
+		.container
+			.row
+				.tr
+					top: 93%
+@media only screen and (max-width : 504px)
+	.second-screen
+		.container
+			.row
+				.col-md-12
+					.tr
+						top: 93.5%
+@media only screen and (max-width : 396px)
+	.second-screen
+		.container
+			.row
+				.col-md-12
+					.tr
+						top: 94.5%
+@media only screen and (max-width : 379px)
+	.second-screen
+		.container
+			.row
+				.col-md-12
+					.tr
+						top: 95%
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 340px)
+	.assortment
+		.conditioner3
+			.container
+				.row
+					.col-md-12
+						#name
+							font-size: 2rem
+						.sphere
+							top: 0.7%
+							left: 50%
+							transform: translate(-50%, -50%)
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

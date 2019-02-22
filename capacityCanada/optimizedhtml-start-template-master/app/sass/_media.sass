@@ -1,0 +1,527 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1199px) and (min-width: 992px)
+    header
+        .menu
+            margin-left: 0rem
+            font-size: 1.4rem
+            ul
+                #icon1
+                    margin-left: 2rem
+                li
+                    &+li
+                        margin-left: 0.5rem
+    .description
+        .Dribbble_Widget
+            .col-md-6
+                position: relative
+                width: 9rem
+                margin-left: 2rem
+                margin-bottom: 2rem
+                    
+            img
+                postition: absolute
+                width: inherit
+                height: inherit
+                margin-left: -2rem
+    .first-screen
+        .slide-text
+            font-size: 1.5rem
+    .pluses
+        font-size: 0.9rem
+    .Excellent
+        font-size: 1.4rem
+        img
+            height: 40rem
+    .RecentPosts
+        .swiper-container
+            .swiper-slide
+                p
+                    font-size: 1.4rem
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 991px) and (min-width: 768px) 
+    html
+        font-size: 5px
+    header
+        .logo
+            img
+                margin-top: 0rem
+        .menu
+            margin-left: 0rem
+            ul
+                li
+                    margin-left: -5rem
+                #icon1
+                    margin-left: 1rem
+                a
+                    font-size: 2.5rem
+                    margin-left: 0rem
+    .first-screen
+        .swiper-button-next
+            margin-top: 0rem
+        .swiper-button-prev
+            margin-top: 0rem
+        .slide-text
+            font-size: 2.4rem
+    .pluses
+        line-height: 4rem
+        font-size: 2rem
+        a
+            height: 7rem
+            width: 7rem
+    .RealizationIdeas
+        p
+            margin-bottom: 10rem
+        img
+            height: 3rem
+        .center
+            position: absolute
+            z-index: 10
+            left: 50%
+            top: 62%
+            transform: translate(-50%, -25%)
+        #center
+            width: 62%
+            height: 34.6rem
+        #left, #right, 
+            width: 90%rem
+            height: 30rem
+    .WordPress
+        font-size: 2rem
+    .latestProjects
+        font-size: 2rem
+    .video
+        font-size: 2rem
+    .Excellent
+        font-size: 2rem
+    .numbers
+        font-size: 2rem
+    .RecentPosts
+        font-size: 2rem
+        .swiper-container
+            .swiper-slide
+                h3
+                    font-size: 3rem
+                p
+                    font-size: 2rem
+    .description
+        margin-top: -11rem
+        font-size: 2rem
+        .Twitter
+            #time
+                margin-bottom: 5.1rem
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 767px)
+    header
+        font-size: 1rem
+        .menu-icon
+                display: inline
+                img
+                    margin-top: 3rem
+        .menu
+            display: none
+            ul
+                li
+                    display: inline-block
+                    margin-top: -5rem
+                    margin-left: -5rem
+                    &+ li
+                        margin-left: 0.3rem
+                  
+                        img
+                            width: 1.5rem
+                            height: 1.5rem
+                #icon1
+                    margin-left: 0.2rem
+                    &+ #icon2
+                        margin-left: 0rem
+                    
+                    
+    .first-screen
+        font-size: 0.8rem
+        .swiper-container
+            .text-wrap
+                width: 100%
+                p
+                    font-size: 1rem
+            .swiper-button-next
+                width: 1.5rem
+                height: 4rem
+                background-size: 3rem 4rem
+            .swiper-button-prev
+                width: 1.5rem
+                height: 4rem
+                background-size: 3rem 4rem
+    .pluses
+        font-size: 1rem
+    .RealizationIdeas
+        font-size: 1rem
+        img
+            height: 3rem
+        .center
+            position: absolute
+            z-index: 10
+            left: 50%
+            top: 62%
+            transform: translate(-50%, -40%)
+        #center
+            width: 90%
+            height: 24rem
+        #left, #right, 
+            width: 45%
+            height: 20rem
+    .WordPress
+        font-size: 1rem
+        p
+            margin-bottom: -1.5rem
+        a
+            margin-top: -5rem
+    .latestProjects
+        font-size: 1rem
+        img
+            height: 13rem
+        h3
+            margin-left: 1rem
+            font-size: 1rem
+        #p1
+            margin-top: 1rem
+            margin-left: 1rem
+            margin-bottom: -1rem
+    .video
+        font-size: 1rem
+        #cover
+            height: 30rem
+        .container-fluid
+            .row
+                .youtube_codegena
+                    p
+                        font-size: 0.9rem
+                    position: relative
+                    .play
+                        position: absolute
+                        width: 5rem
+                        height: 5rem
+                        background-size: 5rem,5rem
+                        left: 50%
+                        top: 60%
+                        transform: translate(30%, 50%)
+                    width: 100%
+                    height: 30rem
+    .Excellent
+        font-size: 1rem
+        img
+            width: 20rem
+            height: 40rem
+    .numbers
+        .col-xs-2
+            img
+                margin-top: -3rem
+            h2
+                font-size: 2rem
+            p
+                font-size: 1.1rem
+                line-height: 1.3rem
+                margin-bottom: -1rem
+            hr
+                margin-bottom: 1rem
+    .RecentPosts
+        font-size: 1rem
+        .swiper-container
+            .swiper-slide
+                .img
+                    position: relative
+                    height: 15rem
+                    img
+                        position: absolute
+                        left: 50%
+                        top: 55%
+                        transform: translate(-50%, -50%)
+                h3
+                    font-size: 1.5rem
+                p
+                    font-size: 0.8rem
+                a
+                    font-size: 1rem
+            .swiper-button-prev
+                left: 46%
+            .swiper-button-next
+                left: 54%
+    .back-image
+        margin-top: -3rem
+        .container-fluid
+            height: 30rem
+        .cover1
+            height: 30rem
+        img
+            height: 30rem
+        .container
+            img
+                height: 10rem
+                width: 10rem
+                margin-top: -30rem
+    .description
+        font-size: 1rem
+        .col-xs-12
+            margin-top: -5rem
+            text-align: center
+            a
+                margin-left: 3rem
+        .col-xs-6
+            margin-top: -10rem
+            //display: none
+        .Dribbble_Widget
+            display: none
+    .end
+        ul
+            margin: 0rem
+        .col-xs-12
+            height: 5rem
+            span
+                font-size: 1rem
+                margin-right: 0.1rem
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 580px)
+	.first-screen
+        .swiper-container
+            .swiper-button-next
+                margin-right: 7%
+            .swiper-button-prev
+                margin-left: 7%
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 480px)
+    header
+        .container
+            padding: 0rem
+            margin: 0rem
+        .col-xs-11
+            width: 100%
+            padding: 0rem
+            padding-right: 3.5rem
+            margin: 0rem
+        .menu-icon
+            position: relative
+            z-index: 1001
+            margin: 0rem
+            padding: 0rem
+        .menu
+            height: inherit
+            margin: 0rem
+            padding: 0rem
+            margin-top: -6.5rem
+            margin-left: -1rem
+            ul
+                z-index: 1000
+                padding: 0rem
+                margin: 0rem
+                margin: 0 auto
+                background-color: rgba(0,0,0,0.8)
+                margin-left: 2rem
+                width: 100%
+                li
+                    &+li
+                        margin-top: 0.5rem
+                    margin: 0rem
+                    padding: 0rem
+                    display: block
+                    text-align: center
+                    a
+                        color: white
+    .first-screen
+        .swiper-container
+            .swiper-button-next
+                margin-right: 0%
+            .swiper-button-prev
+                margin-left: 0%
+        .slide-text
+                .text-wrap
+                    padding: 0rem
+                    margin: 0rem
+                    width: 100%
+                    p
+                        font-size: 1rem
+                        font-weight: normal
+                        margin: 0rem
+                    h1
+                        font-size: 1rem
+                    h3
+                        font-size: 0.8rem
+                    a
+                        padding: 0rem
+    .pluses
+        .col-xs-6
+            width: 100%
+    .RealizationIdeas
+        font-size: 0.8rem
+        img
+            height: 3rem
+        .center
+            position: absolute
+            z-index: 10
+            left: 50%
+            top: 75%
+            transform: translate(-50%, -40%)
+        #center
+            width: 80%
+            height: 12rem
+        #left, #right, 
+            width: 35%
+            height: 10rem
+    .WordPress
+        font-size: 0.8rem
+        line-height: 2.2
+        padding: 0rem
+        margin: 0rem
+        .col-sm-6
+            width: 100%
+            h2,p
+            text-align: center
+        .col-sm-3
+            width: 100%
+            text-align: center
+            margin-top: 3rem
+            margin-bottom: 1rem
+            a
+                float: none
+    .latestProjects
+        font-size: 0.9rem
+        button
+            width: 29%
+            margin: 0.5rem
+            outline: none
+        #last
+            margin-bottom: 2rem
+        .col-xs-12
+            display: none
+        .col-xs-4
+            position: relative
+            left: 50%
+            transform: translateX(-50%)
+            margin: 0rem
+            padding: 0rem
+            width: 80%
+            margin-bottom: 2rem
+        .load_more
+            margin-top: 4rem
+            margin-bottom: 4rem
+    .video
+        font-size: 0.9rem
+        #cover
+            height: 20rem
+        .container-fluid
+            .row
+                .youtube_codegena
+                    h1
+                        margin-top: 4rem
+                        font-size: 1rem
+                    p
+                        font-size: 0.8rem
+                    position: relative
+                    .play
+                        position: absolute
+                        width: 5rem
+                        height: 5rem
+                        background-size: 5rem,5rem
+                        left: 50%
+                        top: 60%
+                        transform: translate(30%, 90%)
+                    width: 100%
+                    height: 20rem
+    .Excellent
+        .col-xs-3
+            position: relative
+            z-index: -1000
+            width: 100%
+            opacity: 0.1
+            text-align: center
+            img
+                height: 33rem
+        .col-xs-7
+            margin: 0rem
+            p,h1
+                text-align: center
+                opacity: 1
+            li
+                opacity: 1
+            width: 100%
+            position: absolute
+            z-index: 10
+    .numbers
+        font-size: 0.8rem
+        .col-xs-2
+            text-align: center
+            width: 33%
+            margin-left: 0rem
+            padding: 0rem
+        #secret
+            display: inline
+    .RecentPosts
+        margin-top: -4rem
+        font-size: 1rem
+        .swiper-container
+            .swiper-slide
+                .img
+                    position: relative
+                    height: 10rem
+                    img
+                        position: absolute
+                        left: 50%
+                        top: 55%
+                        transform: translate(-50%, -80%)
+                h3
+                    font-size: 1rem
+                p
+                    font-size: 0.9rem
+                a
+                    font-size: 1rem
+                    margin: 0rem
+                    padding: 0rem
+                    width: 20%
+            .swiper-button-prev
+                left: 43%
+            .swiper-button-next
+                left: 57%
+    .back-image
+        img
+            height: 20rem
+        .container-fluid
+            height: 20rem
+        .cover1
+            height: 20rem
+        .col-xs-3
+            img
+                width: 6rem
+                height: 6rem
+                margin-top: -20rem
+    .description
+        padding: 0rem
+        p
+            font-size: 0.9rem
+        a
+            font-size: 0.9rem
+        .col-xs-6
+            h1
+                text-align: center
+            width: 100%
+            .Twitter
+                margin-top: -8rem
+        
+    .end
+        .col-xs-12
+            width: 100%
+            padding: 0rem
+            margin-top: -1rem
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 395px)
+	/**/
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/* Small Devices, Tablets */

@@ -1,0 +1,45 @@
+/*стили оформленя для сайта*/
+a:hover{
+    text-decoration: none;
+}
+header, footer{
+    background: #f1f1f1;
+    padding: 10px, 10px
+}
+header h2,footer h2{
+    text-align: center;
+}
+header ul,footer ul{
+    list-style: none;
+    text-align: center;
+}
+header ul li,footer ul li{
+    display: inline-block;
+}
+header ul li+li,footer ul li+li{
+    margin-left: 15px;
+}
+.text-block{
+    border-bottom: 5px dotted blue
+}
+.text-block ol li, .text block p{
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: aquamarine 
+}
+.text-block ol li:first-child{
+    font-style: italic;
+    color: bisque
+    
+}
+.text-block ol li:nth-child(2){
+    text-decoration: underline;
+    font-weight: bold;
+}
+.text-block ol li:nth-child(3){
+    color:blue;
+}
+.text-block h3{
+    font-size: 26px;
+}

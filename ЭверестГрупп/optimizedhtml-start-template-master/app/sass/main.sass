@@ -1,0 +1,1071 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+html
+    font-size: 10px
+*
+    margin: 0rem
+    padding: 0rem
+.modalDialog
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	display: none;
+.modalDialog:target
+	display: block;
+.modalDialog > div
+	position: relative;
+	margin: 10% auto;
+	padding: 0.5rem 2rem 1.3rem 2rem;
+	border-radius: 1rem;
+	width: 31.7rem
+	text-align: center
+	background-color: rgb(245, 245, 245);
+	box-shadow: 0rem 0.5rem 0.5rem 0rem rgba(0, 0, 0, 0.2);
+	.str1
+		margin-top: 1.8rem
+		font-family: "Open Sans"
+		font-size: 1.5rem
+		letter-spacing: 0.36px
+	.str2
+		margin-top: 0rem
+		font-family: "Open Sans"
+		font-size: 2rem
+		span
+			margin-left: 1rem
+	input
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(213, 213, 213);
+		background-color: rgb(255, 255, 255);
+		width: 28rem
+		height: 4rem
+		opacity: 0.9
+		font-size: 15px
+		font-family: "Open Sans"
+		font-style: italic
+		line-height: 1.2
+		padding-left: 1rem
+		box-shadow: inset 0.707px 0.707px 5px 0px rgba(0, 0, 0, 0.15)
+		&+input
+			margin-top: 1.5rem
+
+	#in1
+		margin-top: 2.4rem
+	.give
+		margin-top: 2.5rem
+		width:  28rem
+		height: 5rem
+		margin-left: 0.3rem
+		background-color: rgb(242, 108, 79)
+		box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1)
+		border-radius: 0.2rem
+		a
+			text-decoration: none
+			color: white
+			p
+				padding: 1.4rem
+				font-family: "Open Sans"
+				font-size: 1.9rem
+	#end
+		font-family: "Open Sans"
+		font-size: 1rem
+		margin-top: 1.5rem
+.close
+	background: rgb(245, 245, 245);
+	color: black;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+ 
+.close:hover
+	background: rgb(242, 108, 79) 
+	color: white
+
+
+
+
+
+.first-screen
+	position: relative
+	max-height: 59.2rem
+	height: 59.2rem
+	background-color: black
+	width: 100%
+	background: url("../img/condioners.png")
+	background-position: center -6rem
+	background-size: 100%
+	.header
+		box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+		width: 100%
+		position: absolute
+		top: 0%
+		padding-bottom: 2rem
+		z-index: 2
+		left: 50%
+		transform: translate(-50%)
+		background-color: white
+	.cover
+		width: inherit
+		height: inherit
+		background-color: rgba(43,87,191,0.3)
+	.logo
+		margin-left: -1.5rem
+		margin-top: 2rem
+		border: 0.1rem solid #3653b5
+		width: 17.8rem
+		height: 7.6rem
+		img
+			margin-top: 1.0rem
+			width: 4.7rem
+			height: 2.5rem
+			margin-left: 6.55rem
+			&+p
+				margin-top: 0.7rem
+		p
+			font-family: "Exo2"
+			font-size: 2.2rem
+			text-align: center
+			margin-bottom: 0.8rem
+			color: #3653b5
+	.descript
+		margin-left: -2.6rem
+		margin-top: 2rem   
+		p
+			font-family: "OpenSansItalic"
+			font-size: 1.6rem
+			line-height: 1.1
+			&+p
+				margin-top: 1rem
+	.contact
+		margin-top: 1rem 
+		float: right
+		text-align: center
+		.time
+			font-family: "Open Sans"
+			font-size: 1.5rem
+			margin-right: 0.4rem
+			text-align: center
+		.number
+			margin-top: -0.3rem
+			font-family: "OpenSansLight"
+			font-size: 3.2rem
+			margin-bottom: 0.3rem
+		a
+			font-family: "Open Sans"
+			z-index: 10
+			text-decoration: none
+			font-size: 1.6rem
+			color: black
+			border-bottom: 1px dashed black
+	.slogan
+		margin-left: -1.5rem
+		position: absolute
+		top: 0%
+		margin-top: 16.6rem
+		left: 50%
+		transform: translate(-50%)
+		.str1, .str2, .str3
+			color: #f26c4f
+			font-family: "Open Sans"
+			font-size: 3rem
+			opacity: 0.9
+			letter-spacing: 0.24rem
+			p
+				line-height: 1.5
+				padding-left: 1.5rem
+				padding-right: 1.5rem
+				background-color: #f5f5f5
+				margin: 0rem
+				text-align: center
+				display: inline-block
+	.mini
+		display: none
+	.benefits
+		margin-left: -1.5rem
+		position: absolute
+		top: 0
+		left: 50%
+		margin-top: 36.3rem
+		transform: translate(-50%)
+		opacity: 0.9
+		ul
+			li
+				list-style: none
+				display: inline-block
+				background-color: #f5f5f5
+				padding-top: 1rem
+				padding-bottom: 1rem
+				&+li
+					margin-top: 0.6rem
+				&::before
+					position: absolute
+					content: url(../img/galka.png)
+					margin-top: 0rem
+					margin-left: 2.5rem
+				p
+					margin-left: 5.7rem
+					margin-right: 1.5rem
+					font-family: "Open Sans"
+					font-size: 1.8rem 
+					span
+						font-weight: 1000
+				#first
+					margin-right: 1.9rem
+	.application
+		position: absolute
+		left: 50%
+		transform: translate(-50%)
+		top: 0%
+		margin-top: 16.6rem
+		.appl
+			width: 31.7rem
+			height: 39.7rem
+			text-align: center
+			background-color: rgb(245, 245, 245);
+			box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+			.str1
+				margin-top: 1.8rem
+				font-family: "Open Sans"
+				font-size: 1.8rem
+				letter-spacing: 0.36px
+			.str2
+				margin-top: -0.8rem
+				font-family: "Open Sans"
+				font-size: 2.2rem
+				span
+					margin-left: 1rem
+			input
+				border-style: solid;
+				border-width: 1px;
+				border-color: rgb(213, 213, 213);
+				background-color: rgb(255, 255, 255);
+				width: 28rem
+				height: 4rem
+				opacity: 0.9
+				font-size: 15px
+				font-family: "Open Sans"
+				font-style: italic
+				line-height: 1.2
+				padding-left: 1rem
+				box-shadow: inset 0.707px 0.707px 5px 0px rgba(0, 0, 0, 0.15)
+				&+input
+					margin-top: 1.5rem
+                
+			#in1
+				margin-top: 2.4rem
+			.give
+				margin-top: 2.5rem
+				width:  28rem
+				height: 5rem
+				margin-left: 0.3rem
+				background-color: rgb(242, 108, 79)
+				box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1)
+				border-radius: 0.2rem
+				a
+					text-decoration: none
+					color: white
+					p
+						padding: 1.4rem
+						font-family: "Open Sans"
+						font-size: 1.9rem
+			#end
+				font-family: "Open Sans"
+				font-size: 1.2rem
+				margin-top: 1.5rem
+			.people, .phone, .arrow
+				position: absolute
+				left: 0.2%
+				transform: translate(-100%)
+				z-index: -1
+				width: 4rem
+				height: 4rem
+				background-color: rgb(245, 245, 245);
+				box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1)
+				img
+					padding: 1rem
+					opacity: 0.2
+			.people
+				top: 23%
+			.phone
+				top: 37%
+			.arrow
+				top: 51%
+.right_initial, .second-screen
+    position: relative
+    .circle
+        position: absolute
+        left: 50%
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        transform: translate(-50%, -50%)
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+    #header, #header2
+        margin-top: 5.8rem
+        text-align: center
+        font-size: 2.2rem
+        font-family: "Open Sans"
+        font-weight: lighter
+        color: rgb(58, 58, 58)
+        line-height: 1.2
+    ul
+        text-align: center
+        li
+            display: inline-block
+            &+li
+                margin-left: 0.5rem
+            hr
+                width: 19rem
+                border: none
+                color: rgb(43, 87, 191)
+                background-color: rgb(43, 87, 191)
+                height: 0.1rem 
+            img
+                margin-top: -3.4rem
+                width: 6px
+                height: 5px
+    .comfort2
+        padding-left: 0rem
+        padding-right: 1.5rem
+        &+.comfort 
+            margin-top: 10rem
+    .comfort
+        padding-right: 0rem
+        margin-top: 3rem
+    .comfort, .comfort2
+        .text1, .text2
+            height: 100%
+            position: relative
+            border-style: solid
+            border-width: 1px
+            border-color: rgb(213, 213, 213)
+            background-color: rgba(250, 250, 250, 0)
+            text-align: center
+        .text1
+            margin-top: 0rem
+        .text2
+            margin-top: 3rem
+        h1
+            margin-top: 7.5rem
+            font-size: 2.1rem
+            font-family: "Open Sans"
+            color: rgb(58, 58, 58)
+            line-height: 1.2
+        ul
+            li
+                hr
+                    border: none
+                    width: 100px
+                    height: 1px
+                    background-color: rgb(213, 213, 213)
+                    color: rgb(213, 213, 213)
+                section
+                    border-radius: 50%
+                    background-color: rgb(213, 213, 213)
+                    width: 3px
+                    height: 3px
+                    margin-top: -2.2rem
+        p
+            margin-top: 0rem
+            font-size: 1.5rem
+            font-family: "Open Sans"
+            color: rgb(58, 58, 58)
+            line-height: 1.2
+    .image
+        margin-top: 3rem
+        padding-left: 0rem
+        img
+            width: 100%
+            height: 100%
+            
+    .image2
+        margin-top: 3rem
+        padding-left: 1.5rem
+        padding-right: 0rem
+    .addition
+        margin-top: 2.7rem
+        border-style: solid
+        border-width: 1px
+        border-color: rgb(43, 87, 191)
+        background-color: rgba(58, 58, 58, 0)
+        p
+            font-size: 1.5rem
+            font-family: "Open Sans"
+            line-height: 1.2
+            text-align: center
+            margin-top: 2rem
+            margin-bottom: 2rem
+    .addition2
+        margin-top: 2.7rem
+        border-style: solid
+        border-width: 1px
+        border-color: rgb(43, 87, 191)
+        background-color: rgba(58, 58, 58, 0)
+        h1
+            font-size: 2.2rem
+            font-family: "Open Sans"
+            line-height: 1.2
+            font-weight: normal
+        p
+            font-size: 1.5rem
+            font-family: "Open Sans"
+            line-height: 1.2
+            margin-top: 2rem
+            margin-bottom: 2rem
+        .col-md-3
+            transform: translateY(120%)
+            img
+                margin-left: 15%
+        .col-md-9
+            h1,p
+                margin-left: -5rem
+            h1+p
+                line-height: 1.2
+.suggestion
+    margin-top: 6rem
+    background-color: rgb(245, 245, 245)
+    padding-bottom: 6rem
+    .container-fluid
+        text-align: center
+        .str1
+            p
+                margin-top: 6rem
+                font-size: 2.3rem
+                font-family: "Open Sans"
+                letter-spacing: 0.28rem
+        .str2
+            span
+                font-size: 2rem
+                font-family: "Open Sans"
+                font-style: italic
+                letter-spacing: 0.24rem
+                text-align: right
+                margin-left: 1.5rem
+            img
+                width: 24px
+                height: 24px
+    .toText
+        margin-top: 3.6rem
+        text-align: center
+        .container
+            background-color: rgb(255, 255, 255)
+            box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+            input
+                margin-top: 3rem
+                border-style: solid;
+                border-width: 1px;
+                border-color: rgb(213, 213, 213);
+                background-color: rgb(255, 255, 255);
+                width: 100%
+                height: 3.8rem
+                opacity: 0.9
+                font-size: 1.5rem
+                font-family: "Open Sans"
+                font-style: italic
+                line-height: 1.2
+                padding-left: 1rem
+                box-shadow: inset 0.707px 0.707px 5px 0px rgba(0, 0, 0, 0.15)
+            .give
+                margin-top: 3rem
+                width:  100%
+                height: 3.8rem
+                background-color: rgb(242, 108, 79)
+                box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1)
+                border-radius: 0.2rem
+                a
+                    text-decoration: none
+                    color: white
+                    p
+                        padding: 0.7rem
+                        font-family: "Open Sans"
+                        font-size: 1.9rem
+                        letter-spacing: 0.19px
+                
+        #end
+            margin-top: 1.5rem
+            text-align: center
+            font-family: "Open Sans"
+            font-size: 1.3rem
+            margin-bottom: 3rem
+.icons
+    text-align: center
+    p
+        font-family: "Open Sans"
+        font-size: 2.2rem
+        font-weight: lighter
+        margin-top: 5.6rem
+    ul
+        text-align: center
+        li
+            display: inline-block
+            &+li
+                margin-left: 0.5rem
+            hr
+                width: 19rem
+                border: none
+                color: rgb(43, 87, 191)
+                background-color: rgb(43, 87, 191)
+                height: 0.1rem 
+            img
+                margin-top: -3.4rem
+                width: 6px
+                height: 5px
+    .icon1, .icon2, .icon3
+        ul
+            li
+                img
+                    margin-top: 2rem
+                    width: 12.3rem
+                    height: 12.3rem
+                &+li
+                    margin-left: 4.26rem
+.assortment
+	background-color: rgb(245, 245, 245)
+	p
+		margin-top: 6rem
+		font-size: 2.2rem
+		font-family: "Open Sans"
+		text-align: center
+	ul
+		text-align: center
+		li
+			display: inline-block
+			&+li
+				margin-left: 0.5rem
+			hr
+				width: 5.4rem
+				border: none
+				color: rgb(43, 87, 191)
+				background-color: rgb(43, 87, 191)
+				height: 0.1rem 
+			img
+				margin-top: -3.4rem
+				width: 6px
+				height: 5px
+	.conditioner
+		.col-md-12
+			background-color: rgb(255, 255, 255)
+			box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1)
+			text-align: center
+			margin-bottom: 6rem
+			p
+				margin-top: 3rem
+				font-family: "Open Sans"
+				font-weight: lighter
+				font-size: 2.1rem
+				span
+					font-weight: normal
+			.sphere
+				background-color: white
+				z-index: 2
+				padding-left: 1rem
+				padding-right: 1rem
+				position: absolute
+				top: 20.5%
+				left: 50%
+				transform: translate(-50%, -50%)
+				font-family: "Open Sans"
+				font-size: 1.4rem
+				font-style: italic
+			.col-md-8
+				position: relative
+				#square
+					padding-top: 2rem
+					padding-bottom: 2rem
+					border-width: 1px;
+					border-color: rgb(213, 213, 213);
+					border-style: dashed;
+					font-family: "Open Sans"
+					font-size: 1.5rem
+					font-style: normal
+					span
+						font-weight: bold
+			.col-md-2,section
+				.img
+					margin-top: 3.4rem
+					width: 160px
+					height: 160px
+				ul
+					li
+						hr
+							border: none
+							width: 3rem
+							height: 1px
+							background-color: rgb(213, 213, 213)
+							color: rgb(213, 213, 213)
+						section
+							border-radius: 50%
+							background-color: rgb(213, 213, 213)
+							width: 3px
+							height: 3px
+							margin-top: -2.2rem
+				p
+					margin-top: -1rem
+					font-family: "Open Sans"
+					font-size: 1.5rem
+			.row
+				margin-top: 4rem
+				margin-bottom: 4rem
+				a
+					margin-top: 6rem
+					padding-left: 3rem
+					padding-right: 3rem
+					padding-top: 1rem
+					padding-bottom: 1rem
+					text-decoration: none
+					color: white
+					text-transform: uppercase
+					text-shadow: 0px 1px 5px rgba(242, 108, 79, 0.75)
+					font-family: "Open Sans"
+					font-size: 1.6rem
+					border-radius: 0.3rem
+					background-color: rgb(242, 108, 79)
+					box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1)
+	.conditionerAdd
+		.col-md-12
+			text-align: center
+			ul
+				li
+					.img
+						margin-top: 5rem
+						width: 16rem
+						height: 16rem
+						margin-bottom: -3rem
+						img
+							margin-left: 3rem
+					hr
+						border: none
+						width: 3rem
+						height: 1px
+						background-color: rgb(213, 213, 213)
+						color: rgb(213, 213, 213)
+					section
+						border-radius: 50%
+						background-color: rgb(213, 213, 213)
+						width: 3px
+						height: 3px
+						margin-top: -2.2rem
+			
+						
+			.col-md-2
+				position: relative
+				transform: translate(-215%)
+				left: 50%
+				text-align: center
+				&+.col-md-2
+					margin-left: 2rem
+				#img2
+					margin-top: 3rem
+				#img4
+					margin-top: 4rem
+	.conditioner3
+		.col-md-12
+			ul
+				li
+					section
+						margin: 2rem
+						margin-right: 1rem
+						margin-left: 1rem
+		.sphere
+			margin-top: -5%
+		section
+			display: inline-block
+			&+section
+				margin-left: 1.5rem
+			#trans
+				color: transparent
+.second-screen
+	postition: relative
+	margin-top: 3rem
+	.textborder
+		margin-top: 3rem
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(242, 108, 79);
+		background-color: rgba(58, 58, 58, 0);
+		text-align: center
+		h1
+			margin-top: 3rem
+		h1, p
+			font-family: "Open Sans"
+			font-size: 2.1rem
+			font-weight: normal
+		p
+			font-size: 1.5rem 
+			margin-bottom: 3rem
+		.tr
+			background-color: white
+			position: absolute
+			left: 50%
+			top: 95%
+			transform: translate(-50%)
+			z-index: 20
+			width: 20px;
+			height: 20px;
+			border: 1px solid rgb(242, 108, 79);
+			border-width: 1px 0px 0px 1px;
+			transform: rotate(225deg)
+.first-screen-addition
+    height: 49.9rem
+    margin-top: 5rem
+    background: url("../img/condi.png")
+    background-position: center
+    background-size: 100%
+    .slogan
+        margin-top: 5rem
+        p
+            color: #f26c4f
+            display: inline-block
+            font-size: 2.4rem
+            background-color: #f5f5f5
+            opacity: 0.9
+            padding: 0 1.5rem  0 1.5rem
+            margin-bottom: 0rem
+        &+.benefits
+            margin-top: 20rem
+    .benefits
+        ul
+            li
+                p
+                    text-align: left
+    .application
+        margin-top: 5rem
+.second-addition-addition2
+    background: url("../img/condi3.png")
+    background-position: center 
+    background-size: 130%
+.Olga
+	.woman
+		margin-left: 0rem
+		margin-top: 6rem
+		padding-left: 0rem
+		img
+			width: 100%
+			height: 100%
+	.mainPart
+		width: 74%
+		margin-top: 6rem
+		border-style: solid;
+		border-width: 1px;
+		border-color: rgb(213, 213, 213);
+		background-color: rgba(250, 250, 250, 0);
+		text-align: center
+		h1
+			font-family: "Open Sans"
+			font-size: 2.1rem
+		#work
+			font-family: "Open Sans"
+			font-size: 1.6rem
+			font-style: italic
+		ul
+			li
+				display: inline-block
+				hr
+					border: none
+					width: 100px
+					height: 1px
+					background-color: rgb(213, 213, 213)
+					color: rgb(213, 213, 213)
+				section
+					border-radius: 50%
+					background-color: rgb(213, 213, 213)
+					width: 3px
+					height: 3px
+					margin-top: -2.2rem
+					margin-left: 1rem
+					margin-right: 1rem
+		p
+			font-family: "Open Sans"
+			font-size: 1.5rem        
+		.give
+			margin-top: 3rem
+			margin-bottom: 3rem
+			a
+				width:  100%
+				padding-top: 1rem
+				padding-bottom: 1rem
+				height: 5rem
+				background-color: rgb(242, 108, 79)
+				box-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.1)
+				border-radius: 0.3rem
+				text-decoration: none
+				color: 	white
+				padding-left: 3rem
+				padding-right: 3rem
+				font-family: "Open Sans"
+				font-size: 1.7rem
+				letter-spacing: 0.19px
+				text-shadow: 0px 1px 5px rgba(242, 108, 79, 0.75);
+.guaranties
+	margin-top: 6rem
+	background-color: rgb(245, 245, 245)
+	h1
+		margin-top: 5.5rem
+		text-align: center
+		font-weight: lighter
+		font-family: "Open Sans"
+		font-size: 2.2rem
+	ul
+		margin-top: -2rem
+		text-align: center
+		li
+			display: inline-block
+			&+li
+				margin-left: 0.5rem
+			hr
+				width: 4.5rem
+				border: none
+				color: rgb(43, 87, 191)
+				background-color: rgb(43, 87, 191)
+				height: 0.1rem 
+			img
+				margin-top: -3.4rem
+				width: 6px
+				height: 5px
+	.feature
+		width: 32%
+		margin-bottom: 6rem
+		text-align: center
+		margin-top: 3.5rem
+		background-color: rgb(255, 255, 255)
+		box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+		&+.feature
+			margin-left: 2%
+		img
+			margin-top: 4rem
+			&+p
+				margin-top: 5rem
+				font-weight: lighter
+				font-family: "Open Sans"
+				font-size: 2rem
+				margin-bottom: 0rem
+				span
+					font-weight: normal
+		ul
+			margin-top: 0rem
+			li
+				display: inline-block
+				hr
+					border: none
+					width: 3rem
+					height: 1px
+					background-color: rgb(213, 213, 213)
+					color: rgb(213, 213, 213)
+				section
+					border-radius: 50%
+					background-color: rgb(213, 213, 213)
+					width: 3px
+					height: 3px
+					margin-top: -2.2rem
+					margin-left: 1rem
+					margin-right: 1rem
+		p
+			font-family: "Open Sans"
+			font-size: 1.5rem
+			span
+				font-weight: bold
+			margin-bottom: 5rem
+.believing
+    text-align: center
+    .cover
+        padding-left: 0rem
+        padding-right: 0rem
+        p
+            font-family: "Open Sans"
+            font-size: 2.2rem
+            font-weight: lighter
+            margin-top: 5.6rem
+        ul
+            margin-top: 0rem
+            text-align: center
+            li
+                display: inline-block
+                &+li
+                    margin-left: 0.5rem
+                hr
+                    width: 4.5rem
+                    border: none
+                    color: rgb(43, 87, 191)
+                    background-color: rgb(43, 87, 191)
+                    height: 0.1rem 
+                img
+                    margin-top: -3.4rem
+                    width: 6px
+                    height: 5px
+                    padding-left: 0rem
+        .icon1
+            ul
+                li
+                    border-style: solid
+                    border-width: 1px
+                    border-color: rgb(255, 255, 255)
+                    background-color: rgb(255, 255, 255)
+                    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+                    &+li
+                        margin-left: 5%
+                    img
+                        height: 25rem
+                        width: 18rem
+                #last
+                    margin-bottom: 6rem
+            #diplom
+                margin-top: 7rem
+
+        .icon2, .icon3
+            ul
+                li
+                    img
+                        margin-top: -4rem
+                        width: 12.3rem
+                        height: 12.3rem
+                    &+li
+                        margin-left: 7.65rem
+                        margin-top: 6rem
+        .icon3
+            margin-bottom: 8rem
+.diploms      
+      background-color: rgb(245,245,245) 
+.CPO
+	p
+		padding-top: 5.5rem
+	.row
+		margin: -5rem
+		.col-md-2
+			margin-top: 3rem
+			margin-bottom: 6rem
+			padding-left: 0rem
+			padding-right: 0rem
+			img
+				width: 65%
+		
+.map
+	position: relative
+	width: 100%
+	height: 23rem
+	#map
+		position: relative
+		width: inherit
+		height: inherit
+	.cover
+		top: 0
+		position: absolute
+		width: inherit
+		height: inherit
+		background-color: rgba(43,87,191,0.3)
+		box-shadow: inset 0px -5px 5px 0px rgba(0, 0, 0, 0.1)
+		box-shadow: 0px 5px 5px 0px rgba(0, 0, 1, 0.2)
+		
+	.position
+		position: absolute
+		top: 50%
+		left: 11.5%
+		p
+			display: inline-block
+			background-color: rgb(245, 245, 245)
+ 			opacity: 0.902
+			font-size: 24px
+			font-family: "Open Sans"
+			color: rgb(242, 108, 79)
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+
+.end-screen
+	margin-top: 6rem
+	margin-bottom: 6rem
+	.logo
+        margin-left: -1.5rem
+        margin-top: 2rem
+        border: 0.1rem solid #3653b5
+        width: 17.8rem
+        height: 7.6rem
+        img
+            margin-top: 1.0rem
+            width: 4.7rem
+            height: 2.5rem
+            margin-left: 6.55rem
+            &+p
+                margin-top: 0.7rem
+        p
+            font-family: "Exo2"
+            font-size: 2.2rem
+            text-align: center
+            margin-bottom: 0.8rem
+            color: #3653b5
+	.descript
+        margin-left: -2.6rem
+        margin-top: 2rem   
+        p
+            font-family: "OpenSansItalic"
+            font-size: 1.6rem
+            line-height: 1.1
+            &+p
+                margin-top: 1rem
+	.contact
+		margin-top: 1rem 
+		margin-right: -1.5rem
+		float: right
+		text-align: center
+	.time
+		font-family: "OpenSansRegular"
+		font-size: 1.5rem
+		margin-right: 0.4rem
+		text-align: center
+	.number
+		margin-top: -0.3rem
+		font-family: "OpenSansLight"
+		font-size: 3.2rem
+		margin-bottom: 0.3rem
+	a
+		font-family: "Open Sans"
+		z-index: 10
+		text-decoration: none
+		font-size: 1.6rem
+		color: rgb(242, 108, 79)
+		border-bottom: 1px dashed rgb(242, 108, 79)
+.footer
+	background-color: rgb(245, 245, 245)
+	text-align: center
+	#str1
+		margin-top: 3.5rem
+		&+#str2
+			margin-top: -4rem
+	#str2
+		margin-bottom: 2rem
+	p,a
+		font-family: "Open Sans"
+		font-size: 1.3rem
+		color: rgb(197, 197, 197)
+	.image
+		margin-top: 2rem
+		margin-bottom: 2rem
+	a
+		text-decoration: underline
+	p
+		span
+			text-decoration: underline
+		margin-bottom: 4rem
+	
+
+@import "media" // Всегда в конце
+//display: inline-block и обрезать

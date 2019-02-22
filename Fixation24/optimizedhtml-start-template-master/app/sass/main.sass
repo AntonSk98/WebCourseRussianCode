@@ -1,0 +1,554 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+html
+    font-size: 10px
+body
+    font-family: roboto-example
+.header
+    width: 96rem
+    margin: 0 auto
+    .logo
+        img
+           margin-top: -2.2rem
+        span
+            font-size: 3.4rem
+            color: rgb(43,43,129)
+            font-weight: 900
+    ul
+        padding-left: 0rem
+        li
+            display: inline-block
+            list-style: none
+            &+li
+                margin-left: 11rem
+            &:nth-child(2)
+                p
+                    color: rgb(43,43,129)
+                    text-align: center
+                    font-size: 1.6rem
+                    font-weight: 200
+            &:nth-child(3)
+                p
+                    color: rgb(43,43,129)
+                    text-align: center
+                    #id1
+                       font-size: 2.7rem  
+                       font-weight: 900
+                    #id2
+                        font-size: 1.6rem
+.first-screen
+    width: 100%
+    .backImage_Pluses
+        background-image: url("../img/background.png")
+        width: inherit
+        height: 36.6rem
+        .text1
+            padding-top: 0.09rem
+            height: 11rem
+            background-color: rgba(0,0,0, 0.749)
+            p
+                text-align: center
+                color: rgb(255,255,255)
+                line-height: 0.575
+                font-size: 2.3rem
+                font-weight: lighter
+                span
+                    font-size: 4.4rem
+                    font-weight: bold
+
+        .text2
+            margin-top: 9rem
+            background-color: rgba(43,43,129, 0.749)
+            height: 7.2rem
+            p
+                position: relative
+                top: 50%
+                transform: translateY(-50%)
+                text-align: center
+                color: white
+                font-size: 1.4rem
+                font-weight: lighter
+
+
+    .application
+        margin-top: -2rem
+        width: inherit
+        height: 14rem
+        background-color: rgb(43,43,129)
+        p
+            padding-top: 2rem
+            text-align: center
+            color: white
+            font-size: 2rem
+            font-weight: normal
+        ul
+            margin-left: 26rem
+            left: 0%
+            margin-top: 3rem
+            li
+                list-style: none
+                display: inline-block
+                input
+                    margin-top: -2rem
+                    padding-top: 0.7rem
+                    padding-left: 1rem
+                    padding-right: 2rem
+                    padding-bottom: 0.7rem
+                &+li
+                    margin-left: 1.5rem
+                &:nth-child(4)
+                    margin-top: -1rem
+                a
+                    background-color: rgb(13, 181, 80)
+                    text-decoration: none
+                    color: white
+                    font-size: 1.4rem
+                    line-height: 0rem
+                    padding-top: 0.65rem
+                    padding-bottom: 0.9rem
+                    font-weight: lighter
+                    padding-left: 4.5rem
+                    padding-right: 4.5rem
+                    text-transform: uppercase
+                    
+
+
+    .additionInfo
+        position: relative
+        height: 6.5rem
+        margin-top: -1.4rem
+        width: inherit
+        background-color: rgb(255,204,43)
+        p
+            text-align: center
+            font-size: 1.4rem
+            padding-top: 1.5rem
+            padding-bottom: 1.5rem
+            font-weight: lighter
+        &::after
+            position: absolute
+            content: ""
+            border: 15px solid transparent;	
+            border-bottom: 15px solid rgb(255,204,43);
+            top: -3.0rem
+            left: 68%
+.countAboutCompany
+    margin-top: 4.5rem
+    p
+        font-size: 3.2rem
+        color: rgb(43,43,129)
+        text-align: center
+        margin-bottom: 3.2rem
+    ul
+        padding: 0rem
+        margin: 0 auto
+        width: 89.5rem
+        
+        li
+            color: white
+            font-size: 1.6rem
+            padding: 1.4rem
+            list-style: none
+            display: inline-block
+            span
+                font-size: 3rem
+            &+li
+                margin-left: -0.3rem
+            &:nth-child(1)
+                background: linear-gradient(45deg, #212175 82px , #2b2b81 83px)
+            &:nth-child(2)
+                background: linear-gradient(45deg, #09a949 80px, #0db550 80px)
+            &:nth-child(3)
+                background: linear-gradient(45deg, #3a3a3a 66px , #474747 63px)
+            &:nth-child(4)
+                background: linear-gradient(45deg, #f26629 72px , #ff6c2b 73px)
+            &:nth-child(5)
+                background: linear-gradient(45deg, #212175 90px , #2b2b81 73px)
+            &:nth-child(6)
+                background: linear-gradient(45deg, #09a949 65px, #0db550 65px)
+            
+            
+            
+            
+.specialization
+    margin-top: 9rem
+    p
+        text-align: center
+        color: rgb(43,43,129)
+        line-height: 0.2
+    #txt1
+        font-size: 3.2rem
+    #txt2
+        font-size: 1.6rem
+        margin-bottom: 4rem
+    ul
+        padding: 0
+        margin-top: 3rem
+        width: 96rem
+        margin: 0 auto
+        li
+            list-style: none
+            display: inline-block
+            &+li
+                margin-left: 2rem
+            p
+                line-height: 0.5
+            #transparent
+                color: white
+            &nth-child(4)
+.ourAdvantages
+    margin-top: 5rem
+    ul
+        width: 96rem
+        margin: 0 auto
+        padding: 0
+        li
+            list-style: none
+    h1
+        font-size: 3.2rem
+        color: rgb(43,43,129)
+        font-weight: normal
+        text-align: center
+    #header
+        font-size: 2rem
+        color: #09a949
+        line-height: 0.5
+    .advantage1
+        margin-top: -15rem
+        margin-left: 50rem
+    .advantage2
+        margin-top: 5.5rem
+        margin-left: -50rem
+    p
+        position: relative
+        text-align: center
+        font-size: 1.6rem
+        font-weight: lighter
+    #picture
+        margin-top: -15rem
+        margin-left: 48rem
+    #picture2
+        margin-top: -12.8rem
+        margin-left: 48rem
+    #picture3
+        margin-top: -12.8rem
+        margin-left: 48rem
+    #picture4
+        margin-top: -0.3rem
+    #picture5
+        margin-top: -0.2rem
+.screen2
+    margin-top: 5rem
+    .guaranties
+        position: relative
+        background-color: #0db550
+        height: 22.5rem
+        &::after
+            position: absolute
+            content: ""
+            border: 15px solid transparent;	
+            border-top: 15px solid #0db550;
+            top: 22.5rem
+            left: 48%
+            
+        h1
+            text-align: center
+            color: white
+            font-size: 3.2rem
+            font-weight: normal
+            padding-top: 4.5rem
+        p
+            font-size: 1.9rem
+            text-align: center
+            color: white
+            padding-bottom: 10rem
+    .application
+        margin-top: -2rem
+        width: inherit
+        height: 16rem
+        background-color: rgb(43,43,129)
+        p
+            padding-top: 4rem
+            text-align: center
+            color: white
+            font-size: 2rem
+            font-weight: normal
+        ul
+            margin-left: 26rem
+            left: 0%
+            margin-top: 3rem
+            li
+                list-style: none
+                display: inline-block
+                input
+                    margin-top: -2rem
+                    padding-top: 0.7rem
+                    padding-left: 1rem
+                    padding-right: 2rem
+                    padding-bottom: 0.7rem
+                &+li
+                    margin-left: 1.5rem
+                &:nth-child(4)
+                    margin-top: -1rem
+                a
+                    background-color: rgb(13, 181, 80)
+                    text-decoration: none
+                    color: white
+                    font-size: 1.4rem
+                    line-height: 0rem
+                    padding-top: 0.65rem
+                    padding-bottom: 0.9rem
+                    font-weight: lighter
+                    padding-left: 4.5rem
+                    padding-right: 4.5rem
+                    text-transform: uppercase
+                    
+
+
+    .additionInfo
+        position: relative
+        height: 6.5rem
+        margin-top: -1.4rem
+        width: inherit
+        background-color: rgb(255,204,43)
+        p
+            text-align: center
+            font-size: 1.4rem
+            padding-top: 1.5rem
+            padding-bottom: 1.5rem
+            font-weight: lighter
+        &::after
+            position: absolute
+            content: ""
+            border: 15px solid transparent;	
+            border-bottom: 15px solid rgb(255,204,43);
+            top: -3.0rem
+            left: 68%
+.application
+    .application
+        margin-top: -2rem
+        width: inherit
+        height: 14rem
+        background-color: rgb(43,43,129)
+        p
+            padding-top: 2rem
+            text-align: center
+            color: white
+            font-size: 2rem
+            font-weight: normal
+        ul
+            margin-left: 26rem
+            left: 0%
+            margin-top: 3rem
+            li
+                list-style: none
+                display: inline-block
+                input
+                    margin-top: -2rem
+                    padding-top: 0.7rem
+                    padding-left: 1rem
+                    padding-right: 2rem
+                    padding-bottom: 0.7rem
+                &+li
+                    margin-left: 1.5rem
+                &:nth-child(4)
+                    margin-top: -1rem
+                a
+                    background-color: rgb(13, 181, 80)
+                    text-decoration: none
+                    color: white
+                    font-size: 1.4rem
+                    line-height: 0rem
+                    padding-top: 0.65rem
+                    padding-bottom: 0.9rem
+                    font-weight: lighter
+                    padding-left: 4.5rem
+                    padding-right: 4.5rem
+                    text-transform: uppercase
+    .additionInfo
+        position: relative
+        height: 6.5rem
+        margin-top: -1.4rem
+        width: inherit
+        background-color: rgb(255,204,43)
+        p
+            text-align: center
+            font-size: 1.4rem
+            padding-top: 1.5rem
+            padding-bottom: 1.5rem
+            font-weight: lighter
+        &::after
+            position: absolute
+            content: ""
+            border: 15px solid transparent;	
+            border-bottom: 15px solid rgb(255,204,43);
+            top: -3.0rem
+            left: 68%                    
+.Recalls
+    width: 960px
+    margin: 0 auto
+    h1
+        margin-top: 5rem
+        font-size: 3.2rem
+        color: rgb(43,43,129)
+        text-align: center
+        font-weight: normal
+    img
+        width: 17rem
+        height: 24rem
+        border: 1.5px solid #2b2b81
+    a+a
+        margin-left: 2rem
+.ourClients
+    width: 960px
+    margin: 0 auto
+    h1
+        margin-top: 8rem
+        font-size: 3.2rem
+        color: rgb(43,43,129)
+        text-align: center
+        font-weight: normal
+        margin-bottom: 3rem
+    img
+        opacity: 0.4
+.ourSuppliers
+    width: 960px
+    margin: 0 auto
+    h1
+        margin-top: 4rem
+        font-size: 3.2rem
+        color: rgb(43,43,129)
+        text-align: center
+        font-weight: normal
+        margin-bottom: 3rem
+    img
+        opacity: 0.4
+        margin-bottom: 5rem
+.ExamplesOfWorks
+    width: 960px
+    margin: 0 auto
+    h1
+        font-size: 3.2rem
+        color: rgb(43,43,129)
+        text-align: center
+        font-weight: normal
+    img
+        width: 30rem
+        height: 18rem
+    a+a
+        margin-left: 2rem
+    .str1+.str2
+        margin-top: 2rem
+    .str2+.str3
+        margin-top: 2rem    
+    .additionInfo
+        position: relative
+        height: 6.5rem
+        margin-top: -1.4rem
+        width: inherit
+        background-color: rgb(255,204,43)
+        p
+            text-align: center
+            font-size: 1.4rem
+            padding-top: 1.5rem
+            padding-bottom: 1.5rem
+            font-weight: lighter
+        &::after
+            position: absolute
+            content: ""
+            border: 15px solid transparent;	
+            border-bottom: 15px solid rgb(255,204,43);
+            top: -3.0rem
+            left: 68%
+.map
+    postition: relative
+    #map
+        width: 100%
+        height: 40rem
+        padding: 0
+        margin: 0;
+    .adress
+        text-align: center
+        z-index: 1
+        width: 400px
+        height: 150px
+        position: absolute
+        background: #fff
+        margin-top: -30rem
+        text-align: left
+        margin-left: 10rem
+        
+        h1
+            font-weight: 900
+            font-size: 32px
+            margin-left: 1rem
+            margin: 0rem
+            margin-left: 2rem
+            
+        p
+            font-size: 28px
+            font-family: Roboto
+            margin-left: 1rem
+            margin: 0rem
+            margin-left: 2rem
+            font-weight: lighter
+    .adress :after 
+        content: ''; 
+        position: absolute
+        right: -4.9rem; top: 5rem
+        border: 3rem solid transparent
+        border-left: 2rem solid #fff
+.footer
+    width: 96rem
+    margin: 0 auto
+    .logo
+        img
+           margin-top: -2.2rem
+        span
+            font-size: 3.4rem
+            color: rgb(43,43,129)
+            font-weight: 900
+    ul
+        padding-left: 0rem
+        li
+            display: inline-block
+            list-style: none
+            &+li
+                margin-left: 11rem
+            &:nth-child(2)
+                p
+                    color: rgb(43,43,129)
+                    text-align: center
+                    font-size: 1.6rem
+                    font-weight: 200
+            &:nth-child(3)
+                p
+                    color: rgb(43,43,129)
+                    text-align: center
+                    #id1
+                       font-size: 2.7rem  
+                       font-weight: 900
+                        font-weight: lighter
+    #group
+        font-size: 1.6rem
+        text-align: center
+    .politic 
+        position: relative
+        text-align: center
+        &::after
+            position: absolute
+            content: "∧"
+            font-size: 3rem
+            margin-top: 1rem
+            left: 50%
+            transform: translate(-50%)
+            color: rgb(43,43,129)
+        a
+            color: rgb(43,43,129)
+    .doing
+        text-align: center
+        margin-top: 4rem
+        a
+            color: rgb(43,43,129)
+@import "media" // Всегда в конце

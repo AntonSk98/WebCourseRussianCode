@@ -1,0 +1,278 @@
+a{
+    text-decoration: none;
+}
+h1,h2,h3{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+/*Шапка страницы*/
+.container-h{
+    width: 100%;
+    height: 20%;
+}
+.login_buy_search img{
+    height: 8%;
+    width: 15px;
+}
+.nav{
+    margin-left: 31%;
+}
+.nav li +li{
+    margin-left: 40px;
+}  
+.login_buy_search li+li{
+    margin-left: 16px;
+}
+
+ .column{
+	float: left;	
+}
+.logo {
+    width: 6%;
+    margin-left: 8%;
+}
+.nav li{
+    display: inline-block;
+}
+.login_buy_search li{
+    display: inline-block;
+}
+.login_buy_search{
+    float: right;
+    margin-right: 8%;
+}
+
+.nav ul li:hover{
+    text-decoration: underline;
+}
+.nav a{
+    color: grey;
+    margin-right: 0 auto;
+}
+.login_buy_search a{
+    color: black;
+    margin-right: 0 auto;
+}
+/*Конец шапки страницы*/
+
+.container2 h1, .container2 p{
+    overflow: hidden;
+    margin-left: 8%;
+}
+.container2 p{
+    color: grey;
+    margin-bottom: 4%;
+}
+.image_plus_button{
+    position: relative;
+}
+.image_plus_button img{
+    width: 100%;
+    height: 70%;
+}
+.image_plus_button a{
+    font-weight: bold;
+    padding: 20px;
+    text-align: center; 
+    color: black;
+    background: #ffff99;
+    margin-left: 80%;
+    top: -20px;
+    position: absolute;
+}
+hr{
+    border: none; /* Убираем границу */
+    background-color: #c2c2c2; /* Цвет линии */
+    height: 2px; /* Толщина линии */
+    border-radius: 1px;
+    width: 250px
+}
+.image_plus_button img{
+    border-top: 5px solid #ffff99;
+}
+.title_description{
+    text-align: center;
+    height: 200px;
+}
+.title_description p{
+    color: grey;
+}
+/*Нижний блок*/
+.item1 a,.item2 a,.item3 a,.item4 a,.item5 a {
+    opacity: 0.5;
+    color: grey;
+}
+.items_wrap{
+    position: relative;
+}
+.item1 a:after, .item2 a:after, .item3 a:after,.item4 a:after,.item5 a:after{
+    content: "→";
+    color: black;
+    display: none;
+    position: absolute;
+    padding-left: 250px;
+	transform: translateY(-100%)
+}
+.item1 a:hover:after,.item2 a:hover:after, .item3 a:hover:after, .item4 a:hover:after, .item5 a:hover:after{
+	display: block;
+    color: dimgray;
+}
+.item1 a:hover, .item2 a:hover, .item3 a:hover, .item4 a:hover, .item5 a:hover{
+    color: black;
+    font-weight: bold;
+    opacity: 1;
+    
+}
+.item1 img,.item2 img,.item3 img,.item4 img,.item5 img{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.item1{
+    margin-top: 60px;
+}
+.item1 +.item2{
+    margin-top: 30px;
+}
+ .item2+.item3{
+     margin-top: 30px;
+}
+.item3+.item4{
+    margin-top: 30px; 
+}
+.item4+.item5{
+    margin-top: 30px; 
+}
+.left_side{
+    float: left;
+    margin-left: 6%;
+    width: 44%;
+}
+.left_side p{
+    color: grey;
+}
+.left_side ul{
+    list-style: none;
+}
+.right_side{
+    float:right;
+    width: 50%;
+}
+.right_side img{
+    width: 100%;
+    
+}
+
+.description{
+    position: relative;
+    margin-bottom: 20%;
+}
+.on_image{
+    position: absolute;
+    background-color: white;
+    padding: 15px;
+    margin-left: 20%;
+    top:3%;
+    width: 50%;
+       
+}
+.button a:hover{
+    transform: scale(1.1);
+}
+.on_image p{
+    color: grey;
+    text-align: center;
+    font-size:12p;
+}
+.on_image h4,h5{
+    color: black;
+    font-size:14;
+}
+.on_image h4{
+    margin-left: 4.5%;
+}
+.button1{
+    margin-left: 22.5%;
+    width: 100px;
+    height: 30px;
+    float: left;
+    background-color: rgb(255,232,156);
+    border: 1px solid rgb(255,232,156);
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-top: 4px; 
+    border-right-color:#ffff99 ;
+    transition: all 0.3s ease;
+    
+}
+.fotorama{
+    height: 235px;
+}
+
+.button1 a{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color:black;
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.button1:hover{
+    box-shadow: 0 0 10px rgba(0,10,4,2);
+    background-color:#c2c2c2 ;
+    border-color: #c2c2c2 ;
+    transform: scale(1.05);
+}
+.button2 a{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    color:lightgray;
+    font-size: 15px;
+    font-weight: 900
+}
+.button2{
+    margin-right: 22.5%;
+    width: 100px;
+    height: 30px;
+    background-color:white;
+    float: left;
+    border-bottom: 1px solid ;
+    border-top: 1px solid ;
+    border-right: 1px solid ;
+    border-top-color:lightgray;
+    border-bottom-color:lightgray;
+    border-right-color:lightgray;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 4px ;
+    transition: all 0.3s ease;
+    
+}
+
+.button2:hover{
+    box-shadow: 0 0 10px rgba(0,10,4,2);
+    border-color: #ffff99;
+    transform: scale(1.05);
+}
+.person1 img,.person2 img,.person3 img{
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 40%
+}
+.person1 h5, .person1 p, .person2 h5, .person2 p, .person3 p, .person3 h5{
+    text-align: center;
+}
+.button1 a{
+    padding-left: 25px;
+}
+.button2 a{
+    padding-left: 25px;
+}
+
+
+

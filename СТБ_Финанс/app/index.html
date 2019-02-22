@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="libs/jquery/dist/jquery.js"></script>
+	<script src="js/common.js"></script>
+    <script src="libs/jquery-ui/ui.js"></script>
+    <link rel="stylesheet" href="libs/jquery-ui/ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&amp;subset=cyrillic" rel="stylesheet">
+    <script src="libs/fotorama/fotorama.js"></script>
+    <link href="libs/fotorama/fotorama.css" rel="stylesheet">
+    <script src="libs/jq-mask/mask.js"></script>
+    
+    
+    
+    
+</head>
+<body>
+   <!-- 2. Add images to <div class="fotorama"></div>. -->
+    <div class="container">
+        <div class="header">
+            <ul>
+                <li><img src="img/logo.png"></li>
+                <li>Денежные займы<br>под залог недвижимости<br><br></li>
+                <li>
+                   <div class="number_button">
+                       <ul>
+                           <li>+7 (343) 200-30-30</li>
+                           <li><a href="#">ЗАКАЗАТЬ ЗВОНОК</a></li>
+                       </ul>
+                   </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container2">
+        <h1>Денежные займы под залог недвижимости в Екатеринбурге</h1>
+        <div class="application">
+            <div class="headerApplication">
+                <p id="str1">Оставьте заявку на займ</p>
+                <img src="img/plus.png"><p id="str2">консультацию специалиста</p>
+            </div>
+            <input type="text" placeholder = "Ваше имя">
+            <input type="text" placeholder = "Ваш телефон" name="phone">
+            <div class="button"><a href="#">ОСТАВИТЬ ЗАЯВКУ</a></div>
+            <p id="str3">Заявка не обязывает Вас к получению займа.</p>
+            <p id="str4">Вы можете отказаться в любой момент</p>
+        </div>
+        <div class="couner"></div>
+        <div class="couner2"></div>
+        <div class="calculator">
+            <!--Сумма кредита-->
+            <div class="credit-sum">
+                Сумма кредита
+                <p><input type="text" class="amount" readonly> руб.</p>
+                <div class="input-buffer"></div>
+                <div id="slider-range-min"></div>
+            </div>
+            <!--Срок кредита-->
+            <div class="credit-time">
+                На какой срок
+                <p><input type="text" class="amount2" readonly>месяц<span id="month">a</span></p>
+                <div class="input-buffer2"></div>
+                <div id="slider-range-min2"></div>
+            </div>
+            <!---->
+            <div class="credit-total">
+                <p>
+                    За кредит <span class="amount-2">300000</span> руб на <span class="amount2-2"></span> месяц<span id="month-1">a</span></p>
+                <p>
+                    Вам придется отдать <span id="revenue">345000</span> рублей.
+                </p>
+            </div>
+        </div>
+        <div class="pluses">
+           <ul>
+               <li><img src="img/check.png"><div class="plus">Срок рассмотрения заявки - 1 день</div></li>
+               <li><img src="img/check.png"><div class="plus">Недвижимость остается в собственности у заемщика</div></li>
+               <li><img src="img/check.png"><div class="plus">Индивидуальный график погашения</div></li>
+           </ul>
+            
+        </div>
+    </div>
+    <div class="documents">
+        <div class="container">
+            <h1>НЕОБХОДИМЫЕ ДОКУМЕНТЫ ДЛЯ ПОЛУЧЕНИЯ ЗАЙМА ПОД ЗАЛОГ НЕДВИЖИМОСТИ</h1>
+            <ul>
+                <li><div class="text1">Свидетельство</div><img src="img/doc1.png"></li>
+                <li><div class="text2">Технический паспорт</div><img src="img/doc2.png"></li>
+                <li><div class="text3">Согласие супруги(а)</div><img src="img/doc3.png"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="container">
+            <h1>Выбирая нас, Вы получаете возможность</h1>
+            <ul>
+                <li><img src="img/f1.png"><div class="text1"><p id="name">Быстрое рассмотрение заявки</p><p id="plus1">Рассматриваем вашу заявку<br>в кратчайшие сроки</p></div></li>
+                <li><img src="img/f2.png"><div class="text2"><p id="name">Индивидуальный график погашения</p><p id="plus2">Предоставляем кажому клиенту<br>индивидуальный график платежей, а<br>также возможность досрочного<br>погашения</p></div></li>
+                <li><img src="img/f3.png"><div class="text3"><p id="name">Недвижимость остается в<br>собственности заемщика</p><p id="plus3">Не просим генеральную доверенность<br>и не переписывыем имущество на<br>период погашения</p></div></li>
+            </ul>
+        </div>
+    </div>
+    <div class="response">
+        <div class="container">
+            <h1>Отзывы наших клиентов</h1>
+            <div class="fotorama" data-loop="true" data-width="750" data-height="120" data-nav="false" data-arrows="true">
+                <div>
+                    <img src="img/1.jpg">
+                    <span>Занимал денги в "СТБ-финанс", в залог оставлял свою<br>
+                        квартиру. Удобно, что здесь не нужны поручители, как в<br>
+                        банке, да и вообще условия кредитования гораздо более<br>
+                        лояльные. Деньги в нужном размере я получил быстро,<br>
+                        процент для меня был подобран индивидуальный
+                    </span>
+                </div>
+                <div>
+                    <img src="img/1.jpg">
+                    <span>Занимал денги в "СТБ-финанс", в залог оставлял свою<br>
+                        квартиру. Удобно, что здесь не нужны поручители, как в<br>
+                        банке, да и вообще условия кредитования гораздо более<br>
+                        лояльные. Деньги в нужном размере я получил быстро,<br>
+                        процент для меня был подобран индивидуальный
+                    </span>
+                </div>
+                <div>
+                    <img src="img/1.jpg">
+                    <span>Занимал денги в "СТБ-финанс", в залог оставлял свою<br>
+                        квартиру. Удобно, что здесь не нужны поручители, как в<br>
+                        банке, да и вообще условия кредитования гораздо более<br>
+                        лояльные. Деньги в нужном размере я получил быстро,<br>
+                        процент для меня был подобран индивидуальный
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="end">
+        <div class="container">
+            <div class="application">
+                <div class="headerApplication">
+                    <p id="str1">ФОРМА ЗАЯВКИ</p>
+                </div>
+                <p id="str5">Ваше имя</p>
+                <input type="text">
+                <p id="str6">Ваш телефон</p>
+                <input type="text" name="phone">
+                <div class="button"><a href="#">ОСТАВИТЬ ЗАЯВКУ</a></div>
+                <p id="str3">Заявка не обязывает Вас к получению займа.</p>
+                <p id="str4">Вы можете отказаться в любой момент</p>
+            </div>
+            <div class="lastSuggestion">
+                <h2>ОТПРАВЬТЕ ЗАЯВКУ И ПОЛУЧИТЕ:</h2>
+                <ul>
+                    <li><img src="img/cons1.png"><div class="plus">Индивидуальные условия займа</div></li>
+                    <li><img src="img/cons2.png"><div class="plus">Консультацию специалиста</div></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
